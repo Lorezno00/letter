@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04 - Letter</title>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/p5.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5.plotsvg@latest/lib/p5.plotSvg.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/addons/p5.sound.min.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <!-- Header -->
+        <div class="header">
+            <h1>04 - letter</h1>
+        </div>
+
+        <!-- Contenuto principale -->
+        <div class="content-section">
+            <!-- Colonna 1: Controlli -->
+            <div class="controls-column">
+                <h3>Controlli</h3>
+                
+                <div class="controls-wrapper">
+                    <div class="control-group">
+                        <label>Larghezza:</label>
+                        <div id="wStrokeContainer"></div>
+                    </div>
+
+                    <div class="control-group">
+                        <label>Altezza:</label>
+                        <div id="hStrokeContainer"></div>
+                    </div>
+
+                    <div class="control-group">
+                        <label>Contorno:</label>
+                        <div id="contornoContainer"></div>
+                    </div>
+
+                    <div class="control-group">
+                        <label>Rotazione:</label>
+                        <div id="rotoloneContainer"></div>
+                    </div>
+
+                    <div class="control-group">
+                        <label>Distanza 1:</label>
+                        <div id="numElements1Container"></div>
+                    </div>
+                </div>
+                
+                <div class="button-container">
+                    <div id="saveButtonContainer"></div>
+                </div>
+            </div>
+
+            <!-- Colonna 2: Anteprima e selezione -->
+            <div class="preview-column">
+                <h3>Anteprima</h3>
+                
+                <div id="previewContainer"></div>
+
+                <div class="shape-selector">
+                    <label></label>
+                    <select id="shapeSelect">
+                        <option value="1">Stella 8 punte</option>
+                        <option value="2">Rettangolo</option>
+                        <option value="3">Ellisse</option>
+                        <option value="4">Triangolo</option>
+                        <option value="5">Rombo</option>
+                        <option value="6">Stella 5 punte</option>
+                        <option value="7">Arco</option>
+                    </select>
+                </div>
+
+                <div class="color-pickers">
+                    <div class="control-group">
+                        <label>Riempimento:</label>
+                        <div id="fillPickerContainer"></div>
+                    </div>
+
+                    <div class="control-group">
+                        <label>Contorno:</label>
+                        <div id="strokePickerContainer"></div>
+                    </div>
+
+                    <div class="control-group">
+                        <label>Sfondo:</label>
+                        <div id="sfondoPickerContainer"></div>
+                    </div>
+                </div>
+
+                <div class="button-container">
+                    <div id="savePNGButtonContainer"></div>
+                </div>
+            </div>
+
+            <!-- Colonna 3: Canvas principale -->
+            <div class="canvas-column">
+                <div id="canvasContainer"></div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>Esercitazione 04 del corso di informatica di base ISIA</p>
+        </div>
+    </div>
+
+    <script src="K3.js"></script>
+    <script src="sketch.js"></script>
+</body>
+</html>
